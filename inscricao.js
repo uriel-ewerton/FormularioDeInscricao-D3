@@ -1,4 +1,5 @@
-document.body.querySelector('.formulario__confirmacao__confirmar').addEventListener('click', function(){
+// Salvamentos em localStorage
+document.body.querySelector('.formulario__confirmacao__confirmar').addEventListener('click', function () {
     // campos de 'Informações do participante'
     localStorage.nome = document.body.querySelector('#nome').value;
     localStorage.dataNasc = document.body.querySelector('#dataNascimento').value;
@@ -13,13 +14,17 @@ document.body.querySelector('.formulario__confirmacao__confirmar').addEventListe
     localStorage.numeroRua = document.body.querySelector('#numero').value;
     localStorage.cidade = document.body.querySelector('#cidade').value;
     localStorage.estado = document.body.querySelector('#estado').value;
-    
+
     // checkbox de escolha das trilhas
-    localStorage.trilha = document.body.querySelector('input[name="trilhas"]:checked').value;
-    
+    try { localStorage.trilha = document.body.querySelector('input[name="trilhas"]:checked').value; }
+    catch {
+        console.log('Trilha não selecionada.')
+        return;
+    }
+
     // campos de cadastro
     localStorage.idUsuario = document.body.querySelector('#idUsuario').value;
     localStorage.senha = document.body.querySelector('#senha').value;
 
-    alert('Informações salvas com sucesso!');
+    //alert('Informações salvas com sucesso!');
 })

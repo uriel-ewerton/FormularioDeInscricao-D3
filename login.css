@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@400;500;600&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.modalLogin {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+.modalLogin-show {
+    display: flex;
+    justify-content: center;
+}
+.modalLogin__header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.modalLogin__header__titulo {
+    font-size: large;
+    text-align: center;
+    margin: 0;
+}
+
+.modalLogin__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 15%;
+    padding: 15px;
+    height: fit-content;
+    align-items: center;
+    
+}
+
+.modalLogin__content__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1px; 
+}
+
+.modalLogin__content__btn-div {
+    width: fit-content;
+}
+.modalLogin label {
+    color: rgba(87, 83, 78, 1);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.modalLogin input {
+    height: 25px;
+    padding: 3px 4px;
+    border-width: 1px;
+    border-color: rgba(214, 211, 209, 1);
+    border-radius: 8px;
+    border-style: solid;
+    gap: 2px;
+}
+
+.close {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-70%);
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btnLogin {
+    min-width: 120px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-align: center;
+    align-self: center;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid rgba(228, 58, 18, 1);
+    background-color: rgba(228, 58, 18, 1);
+    color: white;
+}
+.btnLogin:hover,
+.btnLogin:focus {
+    cursor: pointer;
+    background-color: rgb(204, 67, 36);
+}
