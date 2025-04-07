@@ -27,50 +27,48 @@
                         Programa Trilhas.
                     </p>
                 </section>
-                <form action="" class="formulario"  onsubmit="return false;">
+                <form action="" class="formulario" onsubmit="return false;">
                     <fieldset class="informacoes">
                         <div>
                             <legend>Informações do participante</legend>
                         </div>
                         <div>
                             <label for="nome">Nome Completo</label>
-                            <input type="text" id="nome"  />
+                            <input type="text" id="nome" required />
                         </div>
                         <div>
                             <label for="dataNascimento">Data de nascimento</label>
-                            <input type="text" id="dataNascimento"  />
+                            <input type="text" id="dataNascimento" required />
                         </div>
                         <div>
                             <label for="cpf">CPF</label>
-                            <input type="text" id="cpf"  />
+                            <input type="text" id="cpf" required />
                         </div>
                         <div>
                             <label for="sexo">Sexo</label>
-                            <select id="sexo" >
+                            <select id="sexo" required>
                                 <option value="Feminino">Feminino</option>
                                 <option value="Masculino">Masculino</option>
                             </select>
                         </div>
                         <div>
                             <label for="email">E-mail</label>
-                            <input type="text" id="email"  />
+                            <input type="text" id="email" required />
                         </div>
                         <div>
                             <label for="telefone">Telefone</label>
-                            <input type="text" id="telefone"  />
+                            <input type="text" id="telefone" required />
                         </div>
                         <div class="custom-file-upload" id="uploadContainer">
                             <label for="docIdentidade">Documento de identidade</label>
-                            <input type="file"  id="docIdentidade" class="input-hidden"  />
+                            <input type="file" id="docIdentidade" class="input-hidden" required />
                             <label for="docIdentidade" class="custom-upload-area">
                                 <img
                                     src="public/icon/cloud-upload.png"
                                     alt="Ícone de upload"
                                     class="upload-icon"
                                 />
-                                <span class="upload-text"
-                                    >Clique aqui para selecionar o arquivo</span
-                                >
+                                <span class="upload-text">Clique aqui para selecionar o arquivo</span>
                                 <span class="file-name"></span>
                             </label>
                         </div>
@@ -81,40 +79,38 @@
                         </div>
                         <div>
                             <label for="cep">CEP</label>
-                            <input type="text" id="cep"  />
+                            <input type="text" id="cep" required />
                         </div>
                         <div class="endereco__doisInputs">
                             <div class="endereco__doisInputs__primeiro">
                                 <label for="rua">Rua</label>
-                                <input type="text" id="rua"  />
+                                <input type="text" id="rua" required />
                             </div>
                             <div class="endereco__doisInputs__segundo">
                                 <label for="numero">Número</label>
-                                <input type="text" id="numero"  />
+                                <input type="text" id="numero" required />
                             </div>
                         </div>
                         <div class="endereco__doisInputs">
                             <div class="endereco__doisInputs__primeiro">
                                 <label for="cidade">Cidade</label>
-                                <input type="text" id="cidade"  />
+                                <input type="text" id="cidade" required />
                             </div>
                             <div class="endereco__doisInputs__segundo">
                                 <label for="estado">Estado</label>
-                                <input type="text" id="estado"  />
+                                <input type="text" id="estado" required />
                             </div>
                         </div>
                         <div class="custom-file-upload" id="uploadContainer">
                             <label for="compResidencia">Comprovante de residência</label>
-                            <input type="file" id="compResidencia" class="input-hidden"  />
+                            <input type="file" id="compResidencia" class="input-hidden" required />
                             <label for="compResidencia" class="custom-upload-area">
                                 <img
                                     src="public/icon/cloud-upload.png"
                                     alt="Ícone de upload"
                                     class="upload-icon"
                                 />
-                                <span class="upload-text"
-                                    >Clique aqui para selecionar o arquivo</span
-                                >
+                                <span class="upload-text">Clique aqui para selecionar o arquivo</span>
                                 <span class="file-name"></span>
                             </label>
                         </div>
@@ -123,16 +119,13 @@
                         <h2>Trilhas de aprendizagem</h2>
                         <p>Selecione apenas uma trilha</p>
                         <div class="formulario__trilhas__radioButtons">
-                            <label
-                                for="front"
-                                class="formulario__trilhas__radioButtons__rbt"
-                            >
+                            <label for="front" class="formulario__trilhas__radioButtons__rbt">
                                 <input
                                     type="radio"
                                     id="front"
                                     value="front"
                                     name="trilhas"
-                                    
+                                    required
                                 />
                                 <div>
                                     <img
@@ -142,15 +135,13 @@
                                     Programação Front-end
                                 </div>
                             </label>
-                            <label
-                                for="back"
-                                class="formulario__trilhas__radioButtons__rbt"
-                            >
+                            <label for="back" class="formulario__trilhas__radioButtons__rbt">
                                 <input
                                     type="radio"
                                     id="back"
                                     value="back"
                                     name="trilhas"
+                                    required
                                 />
                                 <div>
                                     <img
@@ -160,15 +151,13 @@
                                     Programação Back-end
                                 </div>
                             </label>
-                            <label
-                                for="jogos"
-                                class="formulario__trilhas__radioButtons__rbt"
-                            >
+                            <label for="jogos" class="formulario__trilhas__radioButtons__rbt">
                                 <input
                                     type="radio"
                                     id="jogos"
                                     value="jogos"
                                     name="trilhas"
+                                    required
                                 />
                                 <div>
                                     <img
@@ -178,15 +167,13 @@
                                     Programação de Jogos
                                 </div>
                             </label>
-                            <label
-                                for="ux"
-                                class="formulario__trilhas__radioButtons__rbt"
-                            >
+                            <label for="ux" class="formulario__trilhas__radioButtons__rbt">
                                 <input
                                     type="radio"
                                     id="ux"
                                     value="ux"
                                     name="trilhas"
+                                    required
                                 />
                                 <div>
                                     <img
@@ -196,15 +183,13 @@
                                     Design e Experiência
                                 </div>
                             </label>
-                            <label
-                                for="dados"
-                                class="formulario__trilhas__radioButtons__rbt"
-                            >
+                            <label for="dados" class="formulario__trilhas__radioButtons__rbt">
                                 <input
                                     type="radio"
                                     id="dados"
                                     value="dados"
                                     name="trilhas"
+                                    required
                                 />
                                 <div>
                                     <img
@@ -222,60 +207,59 @@
                         </div>
                         <div>
                             <label for="idUsuario">Id de usuário</label>
-                            <input type="text" id="idUsuario"  />
+                            <input type="text" id="idUsuario" required />
                         </div>
                         <div>
                             <label for="senha">Senha</label>
-                            <input type="password" id="senha"  />
+                            <input type="password" id="senha" required />
                         </div>
                     </fieldset>
                     <div class="formulario__termos">
-                        <input type="checkbox" name="termos" id="termos"  />
-                        <label for="termos"
-                            >Declaro que li e concordo com os
+                        <input type="checkbox" name="termos" id="termos" required />
+                        <label for="termos">
+                            Declaro que li e concordo com os
                             <a href=""><strong>Termos e Condições</strong></a> e com
-                            a <a href=""><strong>Política de Privacidade</strong></a
-                            >.
+                            a <a href=""><strong>Política de Privacidade</strong></a>.
                         </label>
                     </div>
                     <div class="formulario__confirmacao">
                         <button class="formulario__confirmacao__cancelar">Cancelar</button>
-                        <button type="submit" class="formulario__confirmacao__confirmar" >Fazer inscrição</button>
+                        <button type="submit" class="formulario__confirmacao__confirmar">Fazer inscrição</button>
                     </div>
                 </form>
             </main>
         </div>
-            <aside>
-                <img
-                    src="/public/img/Ilustration.png"
-                    alt="Programador com computador"
-                    class="aside__imagem-de-fundo"
-                />
-                <img
-                    src="/public/img/logo-trilhas-inova.png"
-                    alt="Logo do Programa Trilhas Inova"
-                    class="aside__logo"
-                />
-            </aside>
-            <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                    // Garante que o DOM está carregado
-                    const fileInputs = document.querySelectorAll('.input-hidden');
-                    
-                    fileInputs.forEach(input => {
-                        input.addEventListener('change', (e) => {
-                            const container = e.target.closest('.custom-file-upload');
-                            
-                            if (container) {
-                                const fileNameSpan = container.querySelector('.file-name');
-                                if (fileNameSpan) {
-                                    fileNameSpan.textContent = e.target.files[0]?.name || '';
-                                    container.querySelector('.custom-upload-area').classList.toggle('uploaded', !!e.target.files.length);
-                                }
+        <aside>
+            <img
+                src="/public/img/Ilustration.png"
+                alt="Programador com computador"
+                class="aside__imagem-de-fundo"
+            />
+            <img
+                src="/public/img/logo-trilhas-inova.png"
+                alt="Logo do Programa Trilhas Inova"
+                class="aside__logo"
+            />
+        </aside>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Garante que o DOM está carregado
+                const fileInputs = document.querySelectorAll('.input-hidden');
+                
+                fileInputs.forEach(input => {
+                    input.addEventListener('change', (e) => {
+                        const container = e.target.closest('.custom-file-upload');
+                        
+                        if (container) {
+                            const fileNameSpan = container.querySelector('.file-name');
+                            if (fileNameSpan) {
+                                fileNameSpan.textContent = e.target.files[0]?.name || '';
+                                container.querySelector('.custom-upload-area').classList.toggle('uploaded', !!e.target.files.length);
                             }
-                        });
+                        }
                     });
                 });
-            </script>
+            });
+        </script>
     </body>
 </html>

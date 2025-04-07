@@ -21,4 +21,5 @@ document.body.querySelector('.formulario__confirmacao__confirmar').addEventListe
     localStorage.idUsuario = document.body.querySelector('#idUsuario').value;
     localStorage.senha = document.body.querySelector('#senha').value;
 
+    alert('Informações salvas com sucesso!');
 })
