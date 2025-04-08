@@ -1,0 +1,211 @@
+/* Estilo do Navbar */
+.navbar {
+    background-color: #2135A6; /* Cor de fundo original */
+    height: 80px;
+    margin: 20px;
+    border-radius: 16px;
+    padding: 0.5rem;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    color: #fff; /* Altere para branco, para garantir visibilidade */
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+/* Estilo do botão de login */
+.login-button {
+    background-color: #214cce;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #415CE1;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: #fff; /* Cor do texto */
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #000;
+}
+
+/* Navbar quando estiver em modo offcanvas (menu reduzido) */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        background-color: #2135A6; /* Fundo azul escuro para o menu reduzido */
+    }
+
+    .navbar-nav .nav-link {
+        color: #000; /* Cor do texto no menu reduzido */
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #415CE1; /* Cor do texto ao passar o mouse */
+    }
+
+    .navbar-toggler {
+        background-color: #2135A6; /* Fundo do botão hamburguer */
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('img/Ativo_43@4x_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Estilo das fontes no Hero */
+.hero-section .container {
+    height: 100vh;
+    z-index: 1;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 2rem; /* Ajuste do tamanho da fonte */
+}
+
+.hero-section h2 {
+    font-size: 1.25rem; /* Ajuste do tamanho da fonte */
+}
+
+/* Ajuste da imagem no lado esquerdo do texto */
+.hero-section .container .row .col-12.col-md-6.d-flex.align-items-center img {
+    height: 120px;
+    object-fit: contain;
+    margin-right: 20px; /* Aumenta a distância entre a imagem e o texto */
+}
+
+/* Rodapé */
+footer {
+    background-color: #2135A6;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center; /* Garante que o texto e a logo fiquem centralizados */
+}
+
+footer img {
+    height: 20px; /* Tamanho da logo igual ao da navbar */
+    margin-left: 10px; /* Pequeno espaçamento entre o texto e a logo */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Image in the bottom right corner */
+.bottom-image img {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 120px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Estilo do modo escuro */
+body.dark-mode {
+    background-color: #2c2c2c; /* Tom de preto menos escuro */
+    color: #ffffff;
+}
+
+body.dark-mode .navbar {
+    background-color: #1a1a1a; /* Navbar escura */
+}
+
+body.dark-mode .hero-section {
+    background: url('img/Ativo_43@4x_1.png') no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(50%); /* Diminui o brilho da imagem para combinar com o modo escuro */
+}
+
+body.dark-mode footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+body.dark-mode .nav-link {
+    color: #000; /* Cor do texto do menu no modo escuro (branco) */
+}
+
+/* Hover nas links no modo escuro */
+body.dark-mode .nav-link:hover {
+    color: #808080; /* Cor cinza quando o mouse passa sobre o texto */
+}
+
+/* Botão de Modo Noturno dentro do Rodapé */
+#toggle-dark-mode {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #214cce;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+#toggle-dark-mode:hover {
+    background-color: #415CE1;
+}
+
+/* Estilo do menu reduzido (offcanvas) no modo escuro */
+body.dark-mode .navbar-nav .nav-link {
+    color: #000; /* Cor do texto no menu reduzido no modo escuro (preto) */
+}
+
+body.dark-mode .navbar-nav .nav-link:hover {
+    color: #808080; /* Cor cinza quando passar o mouse no menu reduzido */
+}
+
+/* Estilo do botão de login no modo escuro */
+body.dark-mode .login-button {
+    background-color: #1a1a1a; /* Cor de fundo do botão no modo escuro */
+    color: #ffffff; /* Cor do texto do botão no modo escuro */
+}
+
+body.dark-mode .login-button:hover {
+    background-color: #808080; /* Cor do fundo ao passar o mouse no modo escuro */
+}
+
+/* Cor do texto do menu no modo escuro (para o menu completo, não reduzido) */
+body.dark-mode .navbar-nav .nav-link {
+    color: #ffffff; /* Cor do texto do menu no modo noturno (branco) */
+}
+
+/* Hover no menu no modo escuro */
+body.dark-mode .navbar-nav .nav-link:hover {
+    color: #808080; /* Cor cinza quando passar o mouse */
+}
