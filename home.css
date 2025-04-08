@@ -21,6 +21,7 @@
     font-size: 14px;
     padding: 8px 20px;
     border-radius: 50px;
+    border-width: 0px;
     text-decoration: none;
     transition: 0.3s background-color;
 }
@@ -70,7 +71,7 @@
 
 /* Hero Section */
 .hero-section {
-    background: url('img/Ativo_43@4x_1.png') no-repeat center;
+    background: url('/public/img/Ativo_43@4x_1.png') no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -141,7 +142,7 @@ body.dark-mode .navbar {
 }
 
 body.dark-mode .hero-section {
-    background: url('img/Ativo_43@4x_1.png') no-repeat center;
+    background: url('/public/img/Ativo_43@4x_1.png') no-repeat center;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -208,4 +209,19 @@ body.dark-mode .navbar-nav .nav-link {
 /* Hover no menu no modo escuro */
 body.dark-mode .navbar-nav .nav-link:hover {
     color: #808080; /* Cor cinza quando passar o mouse */
+}
+
+/* Estilos do modal de Login*/
+.modal-header {
+    position: relative;
+    justify-content: center;
+}
+/* Posiciona o botão de fechar no canto direito */
+.modal-header .btn-close {
+    position: absolute;
+    right: 1rem;
+}
+/* Ajuste para centralizar verticalmente*/
+.modal-content{
+    margin-top: 60%;
 }
