@@ -10,11 +10,13 @@ function login() {
         // Usuário logou com sucesso
         localStorage.setItem('loggedIn', 'true');
         console.log('Logado com sucesso!');
+        alert('Logado com sucesso!');
 
         // Fechar o modal – utilizando a API do Bootstrap:
         const modalEl = document.getElementById('loginModal');
         const modal = bootstrap.Modal.getInstance(modalEl);
         modal.hide();
+        
         // Alterna os botões login e logout;
         toggleLoginButton();
     } else {
@@ -41,6 +43,7 @@ logoutButton.addEventListener('click', logout);
 
 function logout() {
     localStorage.loggedIn = 'false';
+    alert('Usuário deslogado!');
     window.location.href = 'home.html';
     toggleLoginButton();
 }
