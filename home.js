@@ -47,3 +47,17 @@ function logout() {
     window.location.href = 'home.html';
     toggleLoginButton();
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Obtém o nome do arquivo corrente: "home.html"
+    const currentPage = window.location.pathname.split('/').pop();
+    
+    // Remove a classe "active" de todos os links
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+      link.classList.remove('active');
+      // Se o href do link for igual ao nome da página atual, adiciona "active"
+      if (link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+      }
+    });
+  });

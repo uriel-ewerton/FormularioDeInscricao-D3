@@ -215,6 +215,7 @@ body.dark-mode .navbar-nav .nav-link:hover {
 .modal-header {
     position: relative;
     justify-content: center;
+    color: #000;
 }
 /* Posiciona o botão de fechar no canto direito */
 .modal-header .btn-close {
@@ -224,4 +225,5 @@ body.dark-mode .navbar-nav .nav-link:hover {
 /* Ajuste para centralizar verticalmente*/
 .modal-content{
     margin-top: 60%;
+    color: #000;
 }
