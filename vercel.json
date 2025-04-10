@@ -15,8 +15,11 @@
       }
     },
     {
+      "handle": "filesystem"
+    },
+    {
       "src": "/(.*)", 
-      "dest": "/home.html"
+      "dest": "/index.html"
     }
   ]
 }
