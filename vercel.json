@@ -2,29 +2,29 @@
   "version": 2,
   "builds": [
     {
-      "src": "**",
+      "src": "*.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "public/**",
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*\\.(png|jpg|css|svg))", 
-      "dest": "/public/$1", 
-      "headers": {
-        "Cache-Control": "public, max-age=31536000, immutable"
-      }
-    },
-    {
-      "src": "/(.*)", 
-      "dest": "/home.html"
+      "source": "/",
+      "destination": "/home.html"
     }
+  ],
+  "headers": [
     {
-      "src": "/(.*)", 
-      "dest": "/feedback.html"
-    }
-    {
-      "src": "/(.*)", 
-      "dest": "/inscricao.html"
+      "source": "/(.*\\.(png|jpg|css|svg))",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
     }
   ]
 }
