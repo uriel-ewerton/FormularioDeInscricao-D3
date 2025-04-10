@@ -18,5 +18,13 @@
       "src": "/(.*)", 
       "dest": "/home.html"
     }
+    {
+      "src": "/(.*)", 
+      "dest": "/feedback.html"
+    }
+    {
+      "src": "/(.*)", 
+      "dest": "/inscricao.html"
+    }
   ]
 }
