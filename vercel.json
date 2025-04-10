@@ -1,27 +1,5 @@
 {
   "version": 2,
-  "routes": [
-    {
-      "src": "/public/(.*)",
-      "dest": "/public/$1"
-    },
-    {
-      "src": "/(.*)\\.js",
-      "dest": "/$1.js"
-    },
-    {
-      "src": "/(.*)\\.css",
-      "dest": "/$1.css"
-    },
-    {
-      "src": "/(.*)\\.html",
-      "dest": "/$1.html"
-    },
-    {
-      "src": "/",
-      "dest": "/home.html"
-    }
-  ],
   "cleanUrls": true,
   "trailingSlash": false,
   "headers": [
