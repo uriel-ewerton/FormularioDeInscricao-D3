@@ -123,6 +123,11 @@ footer p {
     font-size: 14px;
 }
 
+footer a{
+    text-decoration: none;
+    color: #9ecc9c;
+}
+
 /* Image in the bottom right corner */
 .bottom-image img {
     position: absolute;
