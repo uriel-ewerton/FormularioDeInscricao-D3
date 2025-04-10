@@ -1,25 +1,64 @@
 {
-  "version": 2,
-  "builds": [
+  "headers": [
     {
-      "src": "**",
-      "use": "@vercel/static"
+      "source": "/img/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/icon/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).css",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*).js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/public/(.*)",
+      "destination": "/$1"
     }
   ],
   "routes": [
     {
-      "src": "/(.*\\.(png|jpg|css|svg))", 
-      "dest": "/public/$1", 
-      "headers": {
-        "Cache-Control": "public, max-age=31536000, immutable"
-      }
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)", 
+      "src": "/home",
       "dest": "/home.html"
+    },
+    {
+      "src": "/inscricao",
+      "dest": "/inscricao.html"
+    },
+    {
+      "src": "/feedback",
+      "dest": "/feedback.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1.html"
     }
   ]
 }
